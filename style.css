@@ -5,6 +5,11 @@
     --primairy: #396dff;
     --grey: #f7f7f7; /*Names must begin with --*/
     --white: #fff;
+    /*8 point grid system aka things are distributed evenly*/
+    --xs: 4px;
+    --s: 8px;
+    --m: 16px;
+    --l: 24px;
 } /*This just means that these colors will be defined for the rest of the code 
 in case you want to use it again later 
 Names must */
@@ -15,9 +20,56 @@ Names must */
 
 body{
     font-family: 'Open sans', sans-serif;
+    margin: 0px;
 }
 
 .navTitle{
-    color: var(--primairy);
+    color: var(--white);
+    font-size: 20px;
+    /*Below cancels some of the default styling */
+    margin: 0;
+    font-weight: normal;
+}
+
+.navContainer{
+    background-color: var(--primairy);
+    padding: var(--l) var(--m);
+    border: 10px;
+    border-color: red;
+    border-radius: var(--m);
+}
+
+img.avatar{
+    max-width: 100%;
+    border-radius: var(--m);
+}
+.avatarContainer{
+    padding: 0 35%;
+
+}
+.avatar{
+    /*make it responsive*/
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    /*div height to be the same has width*/
+    padding-top: 100%;
+
+    /* To make it a circle*/
+    border-radius: 50%;
+
+    /*add an image*/
+    background-image: url("pikachu.jpeg");
+    /*centering on image's center*/
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+
+    /* it makes the clue thing, takes similar demensions*/
+    background-size: cover;
+
+    /*optional for making this div centerd but makes it lookn nice */
+    margin: 0 auto;
 }
 
