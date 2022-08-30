@@ -1,3 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{ /*the :root doesn't really do anything stylistically*/
+    --primairy: #396dff;
+    --grey: #f7f7f7; /*Names must begin with --*/
+    --white: #fff;
+} /*This just means that these colors will be defined for the rest of the code 
+in case you want to use it again later 
+Names must */
+
 .u-textCenter{
     text-align:center;
 }
+
+body{
+    font-family: 'Open sans', sans-serif;
+}
+
+.navTitle{
+    color: var(--primairy);
+}
+
