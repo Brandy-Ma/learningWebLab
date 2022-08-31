@@ -44,7 +44,8 @@ img.avatar{
     border-radius: var(--m);
 }
 .avatarContainer{
-    padding: 0 35%;
+    padding: 0 35%; /*this is the padding for the left and right of your avatar
+    also makes it so your avatar isnt massive*/
 
 }
 .avatar{
@@ -71,5 +72,19 @@ img.avatar{
 
     /*optional for making this div centerd but makes it lookn nice */
     margin: 0 auto;
+}
+
+.u-flex{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.subcontainer{
+    flex-grow: 1;
+    /*if you do flex-grow:1 2 then the first one will have 1 and next one will have 2 size*/
+    flex-basis: 0;
+    /*can set the size of the flex bubbles depending on what you want (50px) or w.e*/
+
 }
 
